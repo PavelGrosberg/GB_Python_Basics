@@ -51,13 +51,13 @@ def input_id():
 
 
 def confirm(condition: str, name: str):
-    answer = input(f'Вы действительно хотите {condition} контакт {name}? (y/n)')
-    if answer == 'y':
+    answer = input(f'Вы действительно хотите {condition} контакт {name}? (д/н)')
+    if answer == 'д':
         return True
     else:
         return False
 
 
 def confirm_changes():
-    answer = input('У Вас есть несохраненные изменения, хотите их сохранить? (y/n)')
-    return True if answer == 'y' else False
+    answer = input('У Вас есть несохраненные изменения, хотите их сохранить? (д/н)')
+    return True if answer == 'д' else False
